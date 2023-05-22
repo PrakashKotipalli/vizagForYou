@@ -8,7 +8,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the Adventure newsletter to receive our best vacation deals
+          Join the vizagforyou newsletter to receive our best vacation deals
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.
@@ -30,7 +30,7 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
+            {/* <Link to='/'>Testimonials</Link> */}
             <Link to='/'>Careers</Link>
             <Link to='/'>Investors</Link>
             <Link to='/'>Terms of Service</Link>
@@ -53,7 +53,12 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
+            <a href="https://www.instagram.com/vizagforyouu"
+             target="_blank"
+             rel="noopener noreferrer"
+             >
+            Instagram
+            </a>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
             <Link to='/'>Twitter</Link>
@@ -64,11 +69,11 @@ function Footer() {
         <div class='social-media-wrap'>
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
-              TRVL
-              <i class='fab fa-typo3' />
+              vizagforyou
+              {/* <i class='fab fa-typo3' /> */}
             </Link>
           </div>
-          <small class='website-rights'>TRVL © 2020</small>
+          <small class='website-rights'>vizagforyou © 2023</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
@@ -78,14 +83,16 @@ function Footer() {
             >
               <i class='fab fa-facebook-f' />
             </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
+
+            <a href="https://www.instagram.com/vizagforyouu"
+            class='social-icon-link instagram'
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label='Instagram'>
+            <i class="fab fa-instagram"></i>
+            </a>
+
+
             <Link
               class='social-icon-link youtube'
               to='/'
