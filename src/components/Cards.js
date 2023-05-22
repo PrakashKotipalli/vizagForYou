@@ -17,7 +17,7 @@ function Cards() {
             />
             <CardItem
               src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
+              text='Stay at some of the nicest places in Vizag with the best views'
               label='Luxury'
               path='/services'
             />

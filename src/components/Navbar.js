@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'react-router-dom';
+import { Switch, Route, Router,  Link } from 'react-router-dom';
 import './Navbar.css';
 
 function Navbar() {
@@ -29,13 +29,13 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            TRVL
-            <i class='fab fa-typo3' />
+           vizagforyou
+            {/* <i class='fab fa-tyspo3' /> */}
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>         
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                 Home
@@ -72,7 +72,7 @@ function Navbar() {
           </ul>
           {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
-      </nav>
+      </nav>     
     </>
   );
 }
